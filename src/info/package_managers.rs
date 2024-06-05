@@ -75,6 +75,9 @@ impl PackageManagers {
 				if has_bin("rpm") {
 					add("rpm", "rpm -qa");
 				}
+				if has_bin("qlist") {
+					add("portage", "qlist -I");
+				}
 				if has_bin("xbps-query") {
 					add("xbps-query", "xbps-query -l");
 				}
